@@ -1,0 +1,44 @@
+.cta-wrapper {
+    background-color: var(--primary-color);
+
+    padding-top: 3rem; padding-bottom: 3rem;
+
+
+    .cta-area {
+            margin-left: auto; margin-right: auto; width: 100%;
+            padding-left: 2rem; padding-right: 2rem;
+        .cta-header-wrapper {
+
+            text-align: center; color: var(--white);
+
+
+
+
+            .cta-header {
+                @include lg-header-title;
+
+            }
+            .cta-paragraph {
+                @include sm-header-paragraph;  line-height: 28px;
+            }
+
+            .cta-btn {
+                @include primaryBtn; background-color: #3CBBB1; width: 270px;
+
+                @include Media (mobile) {
+                    width: 100%
+                }
+
+                .btn-content {
+                    @include btnContentSize1;
+                }
+            }
+
+
+
+
+        }
+
+
+    }
+}

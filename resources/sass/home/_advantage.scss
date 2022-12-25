@@ -1,0 +1,200 @@
+.advantage-wrapper {
+    margin-bottom: 10rem; background-color: var(--background);
+
+    .advantage-area {
+        margin-bottom: 10rem; padding-top: 5rem;
+        display: flex; flex-direction: column; position: relative;
+        text-align: center; justify-content: center;
+
+        &::before {
+            right: calc(60% - 25px); top: -40px; width: 70px;
+            content: ""; height: 70px; position: absolute;
+            background-image: url(/public/img/shapes1.svg);
+        }
+
+        &::after {
+            content: "";  bottom: -120px; filter: blur(4px);  height: 167px;
+            position: absolute; width: 155px; z-index: 1;
+            background-image: url(/public/img/shapes1.svg); right: 5%;
+            background-repeat: no-repeat; transform: rotate(20deg);
+        }
+
+        @include Media (tablet) {
+            padding: 40px 0; margin-bottom: 3.75rem;
+        }
+
+        @include Media (mobile) {
+            padding: 32px 0 20px; margin-bottom: 0;
+        }
+
+        .advantage-header-wrapper {
+            margin:  0 auto 60px;
+
+            .advantage-header {
+                font-size: 28px; font-weight: 600;
+                @include md-header-title;
+
+                .advantage-paragraph {
+                    @include md-header-paragraph;
+                }
+            }
+        }
+
+        .advantage-displays {
+            margin-bottom: -70px; display: flex; position: relative;
+
+            @include Media (mobile) {
+                margin-bottom: 0; flex-direction: column;
+            }
+
+            .displays-wrapper {
+                flex-shrink: 1; position: relative; width: 100%; z-index: 12;
+
+                .displays-controls {
+                    display: flex; justify-content: space-between;
+
+                    .display-btn {
+
+                        text-align: left; background-color: var(--background);
+                        border-radius: 8px; box-shadow: 0 8px 32px 0 rgb(84 85 102 / 14%);
+                        cursor: pointer; padding: 136px 40px 0; position: relative;
+                        font-size: 24px; font-weight: 600; height: 240px; width: 32%;
+
+
+
+                        @include Media (tablet) {
+                            font-size:  18px; height: 180px;
+                            padding: 100px 32px 28px;
+                        }
+
+                        @include Media (mobile) {
+                            display: none;
+                        }
+
+                        &::after {
+                            content: ""; position: absolute; top: -20px; left: 32px;
+                            background-position: 0 0; background-repeat: no-repeat;
+                            height: 141px; width: 260px; filter: grayscale(1);
+
+                        }
+                    }
+
+                }
+
+                .dropdown-displays {
+                    display: flex; flex-direction: column; position: relative;
+                    box-shadow: 0 8px 32px 0 rgb(84 85 102 / 14%); z-index: 100;
+                    margin-bottom: 12px; border-radius: 8px;
+
+                    @include Media (disktop) {
+                        display:none;
+                    }
+                    @include Media (tablet) {
+                        display:none;
+                    }
+
+                    span {
+                        font-weight: 600; font-size: 16; max-width: 85%;
+                    }
+                    &:first-child {
+                        fill: grayscale(1);
+                    }
+
+                    background-color: var(--background);
+                    background-position: 15px 0;
+                    background-repeat: no-repeat;
+                    background-size: 120px;
+
+                    .dropdown-btns {
+                        display: flex; outline: 0; text-align: left;
+                        padding: 72px 14px 14px; width: 100%; justify-content: space-between;
+                    }
+                    .dropdown-cards{
+                        border-bottom-left-radius: 8px;
+                        border-bottom-right-radius: 8px;
+                        background-color: #f8f8f8; padding: 14px; position: relative; z-index: 100;
+                    }
+                }
+
+                .displays-content {
+                    margin-top: 20px; max-width: 100%;
+
+                    @include Media (mobile) {
+                        display: none;
+                    }
+
+                    .displays-display {
+                        position: relative;
+
+                        .display-cards {
+                            display: flex; flex-wrap: wrap; justify-content: flex-start; width: 100%;
+                            background-color: var(--background); border-radius: 8px;
+                            box-shadow: 0 8px 32px 0 rgb(84 85 102 / 14%); padding: 40px;
+                        }
+                    }
+                }
+
+                .cards-card {
+                    margin-right: 3.05%; padding-right: 20px; text-align: left;
+                    margin-bottom: 60px; position: relative; width: 31.3%;
+
+                    @include Media (disktop) {
+
+                        &:nth-child(3n) {
+                            margin-right: 0;
+                        }
+                    }
+                    @include Media (tablet) {
+                        margin-right: 4%; margin-bottom: 32px; width: 48%;
+
+                        &:nth-child(2n) {
+                                margin-right: 0;
+                        }
+                    }
+                    @include Media (mobile) {
+                        margin-right: 0; padding-right: 0;
+                        margin-bottom: 22px; width: 100%;
+
+                        &:nth-child(n+4){
+                            display: none;
+                        }
+                    }
+
+                    &::after {
+                        content: ""; height: 3rem; position: absolute;
+                        top:-4px; right: 0; width: 80px; background-position: 0 0;
+                        background-repeat: no-repeat; background-size: contain;
+                    }
+
+                    .cards-header {
+                        margin-right: 60px; margin-bottom: 12px; font-size: 20px;
+                        font-weight: 600; line-height: 1.2; max-width: 260px;
+
+                    }
+                    .cards-paragraph {
+                        font-size: 15px; font-weight: 500; line-height: 1.2;
+                        opacity: .7;
+                    }
+
+
+                }
+            }
+        }
+    }
+}
+
+.display-decorator {display: none;}
+
+.display-decorator-active {
+display: block; position: absolute; bottom: -30px; left: 0;
+width: 100%; height: 36px; background-color: var(--background); z-index: 1;
+}
+
+.displays-inner {
+    display: none;
+}
+
+.display-inner-active {
+    display: block;
+}
+

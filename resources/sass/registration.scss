@@ -1,0 +1,126 @@
+
+
+.reg-page-style {
+    position: absolute; width: 920px; top: 7vh; left: 55%;
+    max-width: 1040px; margin: auto;  height: 86vh; transform: translateX(-50%);
+
+
+    @include Media (mobile) {
+        position: unset;
+    }
+
+    .style-pic-wrap {
+        transform: translateY(0px);
+        opacity: 1;
+        transition: transform 400ms ease-out 0s, opacity 400ms ease-out 0s; position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: -1;
+
+        img {
+            width: 540px;
+        }
+    }
+
+}
+
+.spacer {padding: 0px 0px 32px;}
+
+.reg-form-wrapper {
+    margin: 0px 66px; padding-left: 50%;
+    transform: translateX(-400px); padding-bottom: 7vh;
+    position: relative;
+
+    .style-logodiv {
+        padding: 64px 0px 40px;
+
+        .style-logowrapper {
+            display: flex; flex-direction: column; align-items: flex-start;
+
+            .reg-logo {
+                width: 142px;
+                height: 32px;
+                vertical-align: middle;
+            }
+
+        }
+
+    }
+
+    .style-formcard {
+            padding: 64px; width: 538px; background: var(--background);
+
+        @include Media (tablet) {
+            padding: 418px; width: 418px;
+        }
+
+        @include Media (mobile) {
+            padding: 26px;
+        }
+
+        .formcard-title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 24px;
+            text-align: left;
+            vertical-align: baseline;
+            text-transform: unset;
+        }
+
+        .formcard-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+            vertical-align: baseline;
+            text-transform: unset;
+            color: var(--primary);
+        }
+
+        .formatted-text {
+            font-family: Graphik, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            vertical-align: baseline;
+            text-transform: unset;
+            color: rgb(76, 85, 102);
+        }
+
+        .policy-wrapper {
+            font-size: 13px
+        }
+
+        .reg-Form-submit {
+
+            .submit-btn {
+                @include primaryBtn;
+
+                .submit-btn-content {
+                    @include btnContentSize1;
+                }
+            }
+        }
+
+        .agreement-box {
+            font-size: 12px; user-select: none;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: left;
+            vertical-align: baseline;
+            text-transform: unset;
+            color: rgb(76, 85, 102);
+        }
+    }
+
+    .sign-in-box {
+        margin-top: 2rem; display: flex; flex-direction: column; align-items: flex-start;
+        .signin-btn {
+            @include primaryBtn; width: auto; margin-top: 1rem;
+            .sign-in-btn-content {
+                @include btnContentSize2;
+            }
+        }
+    }
+}

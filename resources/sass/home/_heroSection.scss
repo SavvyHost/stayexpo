@@ -1,0 +1,105 @@
+.hero-greeting {
+    padding: 110px 0 125px; align-items: stretch; display: flex;
+    justify-content: space-between; position: relative;
+
+    @include Media(tablet){
+        padding: 54px 0 56px ;
+        align-items: center;
+        flex-direction: column ;
+    }
+    @include Media (mobile){
+        padding: 20px 0 32px;
+        flex-direction: column ;
+    }
+
+    &::before {
+        content: ""; filter: blur(7px); height: 380px;
+        position: absolute; top: -210px; width: 380px; z-index: -1;
+        right: -154px;
+        transform: rotate(30deg);
+        background-image: url(/public/img/shapes1.svg);
+        background-repeat: no-repeat;
+
+        @include Media (mobile) {
+         height: 125px; top: -10px; width: 125px; right: -100px;
+        }
+    }
+    &::after {
+        content: ""; filter: blur(2px); height: 125px;
+        position: absolute; top: 20px; width: 125px; z-index: -1;
+        left: -114px;
+        background-image: url(/public/img/shapes1.svg);
+        background-repeat: no-repeat;
+    }
+
+    .hero-auth {
+        display: flex;
+        flex-direction: column;
+        max-width: 650px;
+        text-align: left;
+
+    @include Media(tablet){
+        text-align: center;
+    }
+    @include Media (mobile) {
+        max-width: 420px;
+        text-align: left;
+        }
+
+        .hero-auth-header {
+            @include lg-header-title ;
+            margin-bottom: 12px;
+
+        @include Media (tablet){
+            font-size: 28px;
+        }
+        @include Media (mobile){
+            font-size: 20px; margin-bottom: 6px;
+           }
+        }
+        .hero-auth-paragraph {
+            @include lg-header-paragraph ;
+            max-width: 500px;
+        }
+
+        .hero-auth-btn {
+            display: flex; justify-content: space-between;
+            width: 288px;
+
+            @include Media (tablet){
+            margin: 0 auto 40px; justify-content: center;
+            }
+            @include Media (mobile){
+            display: none
+            }
+            .auth-btn {
+             @include primaryBtn;
+            }
+            .btn-content {
+            @include btnContentSize1;
+
+            }
+        }
+    }
+
+    .hero-search {
+        margin-left: 20px; background-color: rgb(255, 255, 255);
+        border-radius: 12px; padding: 10px;
+        box-shadow: 0 8px 32px 0 rgb(84 85 102 / 14%);
+        align-self: flex-start; max-width: 420px;  width: 40%;
+        position: relative; z-index: 100;
+
+        @include Media(tablet){
+            margin-left: 0;
+            width: 100%;
+            align-self: center;
+        }
+        @include Media(mobile){
+            margin-left: 0;
+            width: 100%;
+            align-self: center;
+        }
+    }
+}
+
+

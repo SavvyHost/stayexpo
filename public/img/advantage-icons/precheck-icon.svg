@@ -1,0 +1,58 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.89" height="35.33" viewBox="0 0 47.89 35.33">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bebdbd;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: #282627;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #fff;
+      }
+    </style>
+    <linearGradient id="linear-gradient" y1="7.52" x2="15.04" y2="7.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b97cd9"/>
+      <stop offset="1" stop-color="#5d22d5"/>
+    </linearGradient>
+  </defs>
+  <g>
+    <path class="cls-1" d="M41.45,10.72H15.17a8.52,8.52,0,0,1,.66,1H41.45A6.35,6.35,0,0,1,47.79,18V36.49a6.35,6.35,0,0,1-6.34,6.33H15.23A6.34,6.34,0,0,1,8.9,36.49v-12l-.5,0-.49,0v12a7.33,7.33,0,0,0,7.32,7.32H41.45a7.33,7.33,0,0,0,7.32-7.32V18A7.32,7.32,0,0,0,41.45,10.72Z" transform="translate(-0.88 -8.48)"/>
+    <rect class="cls-1" x="11.18" y="25.64" width="21.19" height="2.06" rx="1.03"/>
+    <rect class="cls-1" x="33.64" y="25.64" width="10.73" height="2.06" rx="1.03"/>
+    <rect class="cls-1" x="23.98" y="29.27" width="21.28" height="2.06" rx="1.03" transform="translate(68.35 52.12) rotate(180)"/>
+    <rect class="cls-1" x="11.92" y="29.27" width="10.78" height="2.06" rx="1.03" transform="translate(33.74 52.12) rotate(180)"/>
+    <circle class="cls-2" cx="7.52" cy="7.52" r="7.52"/>
+    <rect class="cls-3" x="11.04" y="15.95" width="33.34" height="2.06" rx="1.03"/>
+    <polygon class="cls-3" points="19.39 5.47 20.45 7.6 22.8 7.95 21.1 9.61 21.5 11.95 19.39 10.85 17.29 11.95 17.69 9.61 15.98 7.95 18.34 7.6 19.39 5.47"/>
+    <polygon class="cls-3" points="28.52 5.47 29.58 7.6 31.93 7.95 30.23 9.61 30.63 11.95 28.52 10.85 26.42 11.95 26.82 9.61 25.11 7.95 27.47 7.6 28.52 5.47"/>
+    <path class="cls-4" d="M2.48,10.08H14.33V21.92H2.48Z" transform="translate(-0.88 -8.48)"/>
+    <g>
+      <path class="cls-5" d="M8.24,19.11c-2.23,0-3.83-2.31-3.9-2.41a.14.14,0,0,1,0-.16c.07-.09,1.88-2.36,4-2.36a5.48,5.48,0,0,1,4.06,2.37.14.14,0,0,1,0,.15,5.82,5.82,0,0,1-4,2.4ZM4.62,16.63c.32.42,1.84,2.3,3.77,2.2a5.57,5.57,0,0,0,3.78-2.2,5.21,5.21,0,0,0-3.78-2.17C6.58,14.46,5,16.23,4.62,16.63Z" transform="translate(-0.88 -8.48)"/>
+      <path class="cls-5" d="M8.39,17.59a.95.95,0,0,1,0-1.89.95.95,0,1,1,0,1.89Z" transform="translate(-0.88 -8.48)"/>
+      <path class="cls-5" d="M8.39,18.34a1.69,1.69,0,1,1,1.69-1.69A1.69,1.69,0,0,1,8.39,18.34Zm0-3.11a1.42,1.42,0,1,0,1.42,1.42A1.42,1.42,0,0,0,8.39,15.23Z" transform="translate(-0.88 -8.48)"/>
+    </g>
+    <g>
+      <line class="cls-5" x1="3.74" y1="4.65" x2="4.34" y2="5.35"/>
+      <path class="cls-5" d="M4.41,13.34,5,14a.3.3,0,0,0,.42,0,.3.3,0,0,0,0-.43l-.6-.69a.29.29,0,0,0-.42,0,.3.3,0,0,0,0,.42Z" transform="translate(-0.88 -8.48)"/>
+    </g>
+    <g>
+      <line class="cls-5" x1="7.48" y1="3.13" x2="7.51" y2="4.52"/>
+      <path class="cls-5" d="M8.06,11.61l0,1.39a.3.3,0,0,0,.6,0l0-1.39a.3.3,0,0,0-.6,0Z" transform="translate(-0.88 -8.48)"/>
+    </g>
+    <g>
+      <line class="cls-5" x1="10.25" y1="5.4" x2="11.04" y2="4.72"/>
+      <path class="cls-5" d="M11.35,14.09l.78-.68a.3.3,0,0,0,0-.42.31.31,0,0,0-.43,0l-.78.67a.31.31,0,0,0,0,.43.32.32,0,0,0,.43,0Z" transform="translate(-0.88 -8.48)"/>
+    </g>
+  </g>
+</svg>

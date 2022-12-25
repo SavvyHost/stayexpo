@@ -1,0 +1,129 @@
+@import '../sass/theme';
+@import '../sass/mixins';
+
+.disktop-only {
+    @include Media (mobile) {
+        display: none;
+    }
+    @include Media (tablet) {
+        display: none;
+    }
+}
+.tablet-only {
+    @include Media (disktop) {
+        display: none;
+    }
+    @include Media (mobile) {
+        display: none;
+    }
+}
+.mobile-only{
+    @include Media (disktop) {
+        display: none;
+    }
+    @include Media (tablet) {
+        display: none;
+    }
+}
+
+.flex{ @include Flex("flex"); }
+.flex-wrap{ @include Flex("wrap"); }
+.flex-start{ @include Flex("start"); }
+.flex-end{ @include Flex("end"); }
+.flex-space{ @include Flex("space"); }
+.flex-around{ @include Flex("around"); }
+.flex-row{ @include Flex("row"); }
+.flex-column{ @include Flex("column"); }
+.align-start{ @include Flex("align-start"); }
+.align-end{ @include Flex("align-end"); }
+.auto-margin{ margin: auto; }
+.auto-height { display: block; height: auto; max-height: auto; text-overflow: clip; }
+.auto-width{ width: auto; max-width: auto; }
+.hide{ display: none; }
+.show{ display: block; }
+.circle { border-radius: 50%; }
+.bold { font-weight: bold; }
+.normal { font-weight: normal; }
+.full-width { width: 100%; }
+.full-height { height: 100%; }
+.pointer { cursor: pointer; }
+.ar{ *{ direction: rtl; letter-spacing: 0; } main{ direction: ltr;} }
+.border { outline: 1px solid var(--border); }
+.border-top { box-shadow: 0 -1px 0 0 var(--border); }
+.border-bottom { box-shadow: 0 1px 0 0 var(--border); }
+.border-left { box-shadow: -1px 0 0 0 var(--border)}
+.border-right { box-shadow: 1px 0 0 0 var(--border); }
+.shadow{ box-shadow: .1rem .1rem .2rem var(--shadow); }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed { position: fixed; }
+.over-hide { overflow: hidden; }
+.overx-hide { overflow-x: hidden; }
+.overy-hide { overflow-y: hidden; }
+.over-auto { overflow: auto; }
+.overx-auto{ overflow-x: auto; }
+.overy-auto{ overflow-y: auto; }
+.ellipsis { text-overflow: ellipsis; }
+.clip { text-overflow: clip; }
+.one-line { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.no-letter-space { letter-spacing: normal; }
+.hide-scroll { &::-webkit-scrollbar { display: none; } }
+.no-visible{ visibility: hidden; }
+html{ scroll-behavior: smooth; }
+.visible{ visibility: visible; }
+body{ background-color: var(--background); overflow-x: hidden; overflow-y: auto;}
+html{ overflow-x: hidden; overflow-y: auto;}
+aside { background-color: var(--divs); }
+.nav-div{ position:fixed; background-color: var(--divs); z-index: 9; }
+.full-div { position: fixed; top: 0; left: 0; width: 100%; height: 100%; @extend .flex ; background-color: var(--full-div); z-index: 99;}
+.no-scroll{ &::-webkit-scrollbar{ display: none; } }
+.right-text{ text-align: right; }
+.left-text{ text-align: left; }
+.right-margin{ margin: right; }
+.left-margin{ margin: left; }
+.no-back { background: none; }
+.block{ display: block; }
+.reverse-row{ flex-direction: row-reverse; }
+
+
+
+// SVG ICONS
+
+.card-type-hotels::after {
+    background-image: url(/public/img/advantage-icons/hotels-icon.svg);
+}
+.card-type-cloud::after {
+    background-image: url(/public/img/advantage-icons/cloud-icon.svg);
+}
+.card-type-precheck::after {
+    background-image: url(/public/img/advantage-icons/precheck-icon.svg);
+}
+.card-type-support::after {
+    background-image: url(/public/img/advantage-icons/support-icon.svg);
+}
+.card-type-user-level::after {
+    background-image: url(/public/img/advantage-icons/user-level-icon.svg);
+}
+.card-type-quality::after {
+    background-image: url(/public/img/advantage-icons/quality-search-icon.svg);
+}
+.card-type-loyalty::after {
+    background-image: url(/public/img/advantage-icons/loyalty-program-icon.svg);
+}
+.card-type-rich-features::after {
+    background-image: url(/public/img/advantage-icons/rich-features-icon.svg);
+}
+.card-type-rich-content::after {
+    background-image: url(/public/img/advantage-icons/richcontent-icon.svg);
+}
+.card-type-prices::after {
+    background-image: url(/public/img/advantage-icons/pricecomparison-icon.svg);
+}
+
+.type-agency::after{background-image:url(/public/img/advantage-icons/adv-main1.svg);}
+.type-services::after{background-image:url(/public/img/advantage-icons/adv-main2.svg);}
+.type-individuals::after{background-image:url(/public/img/advantage-icons/adv-main3.svg);}
+
+.sm-type-agency{background-image:url(/public/img/advantage-icons/adv-main1.svg);}
+.sm-type-services {background-image:url(/public/img/advantage-icons/adv-main2.svg);}
+.sm-type-individuals{background-image:url(/public/img/advantage-icons/adv-main3.svg);}

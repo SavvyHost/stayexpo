@@ -1,0 +1,266 @@
+@import '/resources/sass/mixins';
+
+*{
+    box-sizing: border-box;
+    margin: 0; border: 0; padding: 0;
+    outline: none; text-decoration: none;
+    list-style: none; letter-spacing: var(--letter-spacing);
+    font-family: Montserrat , Arial, Helvetica, sans-serif;
+    transition: all .1s linear;
+    -webkit-tap-highlight-color :rgba(0,0,0,0);
+    // color: var(--primary-mix1);
+
+}
+
+:root{
+    --primary-color: #5D22D5;
+    --primary-mix1 : #753ADF ;
+    --primary-mix2 : #6A31DA ;
+    --secondary-color: #42D8C4;
+    --secondary-mix1: #82ECF0;
+    --choose : rgb(0, 170, 0);
+    --black : #0A0F0D ;
+    --white : #F0F0F0 ;
+    --accent-color: #EE4266;
+    --background: #FFF;
+    --field-bg: #ffffff;
+    --field-typo: #2d3137;
+    --field-placeholder: #afafaf;
+    --field-label: #2d3137;
+    --field-border: rgba(45, 49, 55, 0.12);
+    --field-hover-border: rgba(45, 49, 55, 0.4);
+    --field-active-border: rgba(45, 49, 55, 0.15);
+    --nav: #FFF;
+    --hover: rgba(0, 0, 0, .1);
+    --text-primary: #2d3137;
+    --text-secondary: #222;
+    --light-color: #ddd;
+    --light-color1: #FFF;
+    --big-color: #000;
+    --small-color: #666;
+    --hash: #777;
+    --border: rgb(200, 200, 200);
+    --border1: #888;
+    --border-radius: .3rem;
+    --letter-spacing: .5px;
+    --header-button: rgb(30, 101, 110);
+    --header-button-hover: rgb(19, 68, 74);
+    --shadow: #7773;
+    --shadow1: #7775;
+    --star: rgb(247, 169, 25);
+    --star-hover: rgb(255, 132, 0);
+    --button: rgb(223, 102, 17);
+    --button-hover: rgb(255, 118, 21);
+    --button-color: #FFF;
+    --link: rgb(20, 79, 204) ;
+    --link-primary: rgb(0, 16, 35) ;
+    --light-links: #fefe;
+    --links-hover: #753ADF;
+    --error: rgb(177, 22, 22);
+    --warning : rgb(136, 0, 0);
+    --success: rgb(12, 123, 0);
+}
+
+
+.container {
+    max-width: 84.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    padding: 0;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 0px auto;
+
+    @include Media (tablet) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+
+    @include Media (mobile) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+    }
+
+}
+
+
+.divider {
+    border-top: 2px solid var(--background) ; margin-top: 2rem;
+}
+
+.divider-filters {
+    border-width: 0px 0px 1px; margin: 8px 0;
+    border-top-style: initial;
+    border-right-style: initial;
+    border-left-style: initial;
+    border-image: initial;
+    border-bottom-style: solid;
+    border-color: rgb(192, 202, 213);
+    background-color: rgb(192, 202, 213);
+}
+
+a {
+    text-decoration: none; cursor: pointer;
+    background-color: transparent;
+}
+
+img {
+    display: block; object-fit: contain; max-width: 100%; height: auto; border-style: none;
+}
+
+
+svg {stroke: none;}
+
+
+p {
+    margin: 0;
+}
+
+b {
+    font-weight: bolder;
+}
+
+sub, sup {
+    font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em;
+}
+
+[dir] button, [dir] input, [dir] optgroup, [dir] select, [dir] textarea {
+    border:0 ;
+    margin: 0;
+    padding: 0;
+}
+
+// Components Css Start Here
+
+.widget-arrow {
+            width: 1.2rem;  align-items: center;
+            justify-content: center; display: flex;
+}
+
+.widget-icon {
+            width: 1.5rem; align-items: center; justify-content: center;
+             display: flex;
+}
+
+.input-wrapper {
+    display: inline-flex; flex-direction: column;
+    width: 100%;
+
+    .input-label {
+        display: inline-flex; flex-direction: column-reverse; overflow: hidden; position: relative;
+        padding: 3px 12px 5px 16px; border: 1px solid var(--field-border); border-radius: 4px; cursor: pointer;
+        background-color: var(--field-bg); height: 48px; transition: border-color .16s ease,box-shadow .16s ease;
+
+        &:hover {
+            border-color: var( --field-hover-border);
+        }
+        &:active {
+            border-color: var(--field-active-border);
+        }
+
+        .input-controlline {
+            align-items: center; display: flex; flex-grow: 1; justify-content: space-between;
+            .input-control {
+            color: var(--black); background-color: transparent; font-size: 16px; font-weight: 500; line-height: 1.25; width: 100%;
+            overflow: hidden; position: relative; text-overflow: ellipsis; white-space: nowrap;
+
+            }
+        }
+
+        .input-title-wrapper {
+            display: inline-flex; max-width: 100%;
+
+            .input-title {
+                margin-bottom: 1px; font-size: 12px; white-space: nowrap;
+                color: var(--filed-label); line-height: 17px;
+                position: relative; overflow: hidden; text-overflow: ellipsis;
+            }
+        }
+    }
+}
+
+.search-form-wrapper {
+        width: 100%; margin: 0 auto; display: flex; flex-wrap: wrap;
+        justify-content: space-between;
+
+        .form-destinations {
+            @include formControl();
+            width: 100%;
+        }
+
+        .form-dates {
+            @include formControl();
+            position: relative;
+
+            @media (min-width: 1075px){
+                width: 30%;
+            }
+            .datepicker-group {
+                display: flex; align-items: flex-start;
+
+                .datapicker-input {
+                    min-width: 110px; display: grid ; flex-grow: 1;
+                    cursor: pointer; flex-direction: column;
+                }
+            }
+        }
+
+        .form-guests {
+            @include formControl();
+            min-width: 136px; width: 100%;
+
+            .input-icon {
+                display: flex; pointer-events: none;
+
+                .guests-arrow-down {
+                    opacity: .6;
+                }
+            }
+
+        }
+
+        .search-Form-submit {
+            width: 15%; margin: 10px;   flex-grow: 1;
+
+            .submit-btn{
+                @include primaryBtn();
+                padding: 0 20px ;
+
+                .submit-btn-content {
+                @include btnContentSize2();
+                }
+            }
+        }
+}
+
+.show-more-link-wrapper {
+
+    text-align: left; width: 100%;
+
+    .show-more-link {
+        display: inline-flex; align-items: center;  max-width: 300px;
+        font-size: 15px; font-weight: 600; color: var(--primary-mix2);
+
+    .show-more-link-arrow {
+        margin-left: 2px; transform: rotate(180deg);
+
+    }
+
+        &:hover {
+            color: #42D8C4;
+        .show-more-link-arrow {
+            margin-left: 4px;
+        }
+
+    }
+    }
+
+
+}
+
+
+
+

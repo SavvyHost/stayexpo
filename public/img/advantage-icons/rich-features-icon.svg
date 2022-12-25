@@ -1,0 +1,54 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.82" height="41.24" viewBox="0 0 47.82 41.24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bebdbd;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-4 {
+        opacity: 0.9;
+      }
+
+      .cls-5 {
+        fill: none;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-6 {
+        fill: #231f20;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="-0.24" y1="59.52" x2="15.11" y2="59.52" gradientTransform="translate(-47.48 55.7) rotate(-105.5)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#b97cd9"/>
+      <stop offset="1" stop-color="#5d22d5"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="35.17" y1="12.83" x2="47.82" y2="12.83" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" xlink:href="#linear-gradient"/>
+  </defs>
+  <g>
+    <path class="cls-1" d="M45.49,24.41H44.31v.53A19.43,19.43,0,0,1,12,39.46l-1,.71A20.61,20.61,0,0,0,45.49,24.94ZM24.88,5.5a19.36,19.36,0,0,1,14,6l.78-.91a20.62,20.62,0,0,0-35.44,14,11.52,11.52,0,0,1,1.18-.14A19.47,19.47,0,0,1,24.88,5.5Z" transform="translate(-1.59 -4.32)"/>
+    <path class="cls-2" d="M15.25,31.56l-.68-1.24L7.11,29.07l-1.43-2.6A1.49,1.49,0,0,0,3.07,27.9l1.47,2.67-2.95,7,.64,1.17L6.43,34l1.65,3L6.84,39.39l.72,1.3L10.1,37.6l4-.49-.72-1.3-2.67-.23L9,32.53Z" transform="translate(-1.59 -4.32)"/>
+    <polygon class="cls-3" points="41.5 6.82 43.45 10.78 47.82 11.41 44.66 14.5 45.4 18.85 41.5 16.79 37.59 18.85 38.33 14.5 35.17 11.41 39.54 10.78 41.5 6.82"/>
+    <g class="cls-4">
+      <g>
+        <path class="cls-5" d="M16.8,12.45a14,14,0,0,1,11-2.17" transform="translate(-1.59 -4.32)"/>
+        <path class="cls-6" d="M14,14.73a18.23,18.23,0,0,1,5.79-.91l-2.57-1.61-.94-2.89A18.25,18.25,0,0,1,14,14.73Z" transform="translate(-1.59 -4.32)"/>
+      </g>
+    </g>
+    <g class="cls-4">
+      <g>
+        <path class="cls-5" d="M32.84,38.14a14,14,0,0,1-11,2.18" transform="translate(-1.59 -4.32)"/>
+        <path class="cls-6" d="M35.66,35.87a18.24,18.24,0,0,1-5.8.91l2.57,1.61,1,2.88A18.2,18.2,0,0,1,35.66,35.87Z" transform="translate(-1.59 -4.32)"/>
+      </g>
+    </g>
+  </g>
+</svg>

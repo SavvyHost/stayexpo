@@ -1,0 +1,136 @@
+ul.accordion-list {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+  background-color: #f9f9fA;
+
+  li {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: #FFF;
+    padding: 20px;
+    margin: 0 auto 15px auto;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &.active {
+      h3 {
+        &:after {
+          transform: rotate(45deg);
+        }
+      }
+    }
+
+    h3 {
+      font-weight: 700;
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      padding: 0 0 0 0;
+      margin: 0;
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      cursor: pointer;
+
+      &:after {
+        content: "\f278";
+        font-family: "material-design-iconic-font";
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #Fcc110;
+        transition: all 0.3s ease-in-out;
+        font-size: 18px;
+      }
+    }
+
+    div.answer {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+
+      p {
+        position: relative;
+        display: block;
+        font-weight: 300;
+        padding: 10px 0 0 0;
+        cursor: pointer;
+        line-height: 150%;
+        margin: 0 0 15px 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+.faq-section-wrapper {
+
+    display: flex; justify-content: center;
+    margin-top: 2rem; margin-bottom: 2rem; align-items: stretch;
+    width: 100%; position: relative;
+
+    .faq-section {
+        min-width: 300px; width: 100%;
+    }
+
+    .faq-sidebar {
+        display: flex; flex-direction: column; width: 300px; min-width: 300px;
+        margin-right: 48px; box-shadow: 0 8px 32px 0 rgb(84 85 102 / 14%);
+        flex-flow: column wrap;
+
+
+        //  padding: 0px 0 0 2rem; flex: 0 0 33%;
+        // margin-right: 2rem;
+        // display: flex;  flex-direction: column;
+        // background-color: red;
+
+        .list-faq-box {
+            width: 100%; background-color: #f9f9fA;
+        }
+
+        .contact-card-box {
+            padding: 32px; border-radius: 8px;
+            border: 1px solid rgb(192, 202, 213); display: flex;
+            flex-direction: row; -webkit-box-align: center; align-items: center;
+            box-shadow: rgb(0 0 0 / 20%) 0px 0px 2px 0px, rgb(0 0 0 / 12%) 0px 4px 2px -2px, rgb(0 0 0 / 16%) 0px 4px 8px -1px;
+
+            & > :not(:last-child) {
+                 margin-right: 8px;
+            }
+
+            .card-box-content {
+                width: 100%; display: flex; flex-direction: column;
+
+                .card-header {
+                    color: var(--primary-mix2);
+                    font-weight: 700;
+                    font-size: 20px;
+                }
+
+                .card-text {
+                    color: rgb(0, 24, 51);
+                    padding-top: 8px; padding-bottom: 8px;
+                    font-size: 14px;
+                }
+            }
+
+            .card-img {
+                width: 110px; max-width: 100%; border-radius: 6px;
+            }
+        }
+    }
+}
+
+

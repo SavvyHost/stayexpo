@@ -1,0 +1,222 @@
+.hero-section {
+    display: block; height: 425px; width: 100%; color: #fff; background-color: #2f2f2f;
+    background-image: url(https://ik.imagekit.io/etg/tr:w-1920,h-425/expobeds.com/skeleton/panorama-munich.jpg);
+    background-position: center center;
+
+    .hero-content-overlay {
+        width: 100%; height: 100%; background-color: #000000bf;
+    }
+
+    .hero-box {
+        display: flex; flex-direction: column; height: 100%;
+
+        .hero-box-wrapper {
+            flex: 1 1 .000000001px; display: flex; flex-direction: column;
+            justify-content: center; align-items: center; height: 100%;
+
+            h1 {
+                text-align: center; padding-left: 1rem; padding-right: 1rem;
+                padding-top: 4rem; padding-bottom: 4rem; font-size: 3rem;
+                margin: 0; line-height: 1;
+            }
+
+
+        }
+    }
+}
+
+.mapped-block-wrapper {
+    background-color: #f8f8f8;
+
+    .mapped-box {
+        display: flex; justify-content: flex-end; position: relative; background-position: 0 70%;
+        background-repeat: no-repeat; background-size: 55%; padding: 80px 0;
+        background-image: linear-gradient(270deg,#f8f8f8,hsla(0,0%,97.3%,0) 41%),url(/public/img/map-adv-cover.png);
+
+        &::after {
+            background-image: url(/public/img/card-adv.png); left: 12%; background-repeat: no-repeat;
+            background-size: cover; bottom: calc(100% - 178px);
+            content: ""; height: 111px; position: absolute; width: 294px;
+        }
+
+        .mapped-box-paragraph {
+            padding-top: 50px; width: 47.4%; position: relative;
+
+            &::after {
+                content: ""; height: 48px; position: absolute; top: 50px;
+                right: -15px; width: 73px; background-repeat: no-repeat;
+            }
+
+            .mapped-box-header {
+                @include md-header-title ; margin-bottom: 8px;
+            }
+            .mapped-box-paragraph {
+                @include md-header-paragraph ;
+            }
+        }
+    }
+}
+
+.advantage-hero {
+    padding: 80px 0; position: relative;
+
+    &::after {
+        right: 0; background-position: 0 15%;
+        background-repeat: no-repeat; background-size: contain;
+        content: ""; height: 100%; position: absolute; top: 20px; width: 45%;
+    }
+
+    .adv-header-content {
+        min-width: 532px; width: 40%;
+
+        .header-title {
+            @include lg-header-title; margin-bottom: 1rem
+
+        }
+
+        .header-paragraph {
+
+            @include lg-header-paragraph;
+
+        }
+
+    }
+}
+
+.simply-block-wrapper {
+    background-color: var(--background); position: relative;
+
+
+    .simply-box {
+        padding: 64px 0 80px;
+        .simply-paragraphs {
+            display: flex; justify-content: space-between;
+
+            .simply-block-paragraph {
+                margin-top: 60px; margin-left: 64px; position: relative; width: 100%;
+
+                &::after {
+                    content: ""; height: 48px; position: absolute; top: -10px;
+                    right: -15px; width: 73px; background-repeat: no-repeat;
+                }
+
+                .simply-box-header {
+                    @include md-header-title ; margin-bottom: 8px; width: 80% ;
+                }
+
+                .simply-box-text {
+                    @include md-header-paragraph ;
+                }
+            }
+        }
+    }
+
+
+}
+
+.simply-img-wrapper {
+    background-color: var(--background);
+
+    .simply-img-box {
+        display: flex; justify-content: flex-end; position: relative; padding: 80px 0;
+
+        &::before {
+            content: ""; height: 423px; position: absolute; width: 427px;
+            background-position: 0 0; left: 30px; bottom: -10px;
+            background-repeat: no-repeat; background-size: contain;
+            background-image: url(/public/img/about-img-1.png);
+        }
+
+        &::after {
+            background-position: 0 0;
+            left: 376px;
+            transform: rotate(72deg); background-image: url(/public/img/shapes1.svg);
+            background-repeat: no-repeat;
+            background-size: contain; bottom: 50px;
+            content: "";
+            height: 70px;
+            position: absolute;
+            width: 70px;
+        }
+
+        .simply-img-paragraph {
+            padding-top: 60px; position: relative; width: 47.4%;
+
+            &::after {
+                content: ""; height: 48px; position: absolute; top: 50px;
+                right: -10px; width: 73px; background-repeat: no-repeat;
+            }
+
+            .simply-img-header {
+                @include md-header-title; margin-bottom: 8px
+            }
+            .simply-img-text {
+                @include md-header-paragraph;
+            }
+
+        }
+    }
+}
+
+.search-block-wrapper {
+    background-color: var(--background);
+
+    .search-block-area {
+        padding: 80px 0; position: relative;
+
+        &::before {
+            content: ""; filter: blur(10px);  height: 281px;
+            position: absolute; top: -120px; width: 281px; right: -216px;
+            background-image: url(/public/img/shapes1.svg); background-repeat: no-repeat;
+        }
+
+        .search-block {
+            display: flex; justify-content: space-between;
+
+
+            .search-block-paragraph {
+                margin-right: 113px; padding-top: 60px; position: relative; width: 100%;
+
+                .block-header {
+                    @include md-header-title;
+                }
+
+                .block-text {
+                    @include md-header-paragraph;
+                }
+            }
+
+            .search-block-form {
+                background-color: #fff; border-radius: 8px; width: 100%;
+                box-shadow: 0 8px 24px 0 rgb(84 85 104 / 24%); z-index: 1;
+                margin-top: 30px; max-width: 466px; position: relative;
+
+                .search-form-wrapper {
+                    display: flex; flex-wrap: wrap; justify-content: space-between;
+                    margin: 0 auto; width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.subfooter {
+
+    margin: 0 auto; padding: 64px 0; text-align: center;
+
+    .subfooter-header {
+        @include lg-header-title; margin-bottom: 28px;
+    }
+
+    .subfooter-button {
+        margin: 0 auto; width: 288px;
+
+        .auth-btn {
+            @include primaryBtn;
+
+            .btn-content {
+                @include btnContentSize1;
+            }
+        }
+    }
+}

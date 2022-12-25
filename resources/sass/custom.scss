@@ -1,0 +1,114 @@
+
+.about-us-wrapper {
+    background-color: var(--background); margin: 0 auto; position: relative;
+
+
+    .header-wrapper {
+        position: relative;
+
+        &::before {
+            content: ""; filter: blur(7px);  height: 380px;  position: absolute;  top: -210px;
+            width: 380px; background-repeat: no-repeat; background-image: url(/public/img/shapes1.svg);
+            right: -154px; transform: rotate(30deg);
+
+            @include Media (tablet) {
+                right: -192; transform: rotate(41deg); height: 240px; top: -113px; width: 240px;
+            }
+            @include Media (mobile) {
+                right: -61; transform: rotate(70deg); height: 169px; top: -90px; width: 169px;
+            }
+        }
+
+        .about-header-header {
+            padding: 84px 0 64px; display: flex; flex-direction: column;
+            justify-content: center; position: relative; z-index: 1;
+
+            @include Media (tablet) {
+                padding: 54px 0 32px;
+            }
+
+            @include Media (mobile) {
+                padding: 20px 0 16px;
+            }
+
+            &::before {
+                content: ""; height: 139px; position: absolute; top: 504px;
+                  width: 139px; right: 406px; transform: rotate(30deg);
+                  background-repeat: no-repeat; background-size: contain;
+                  background-image: url(/public/img/shapes1.svg);
+
+                  @include Media (tablet) {
+                    right: 173px; height: 67px; top: 302px; width: 67px;
+
+                  }
+
+                  @include Media (mobile) {
+                    right: -66; bottom: -30px; filter: blur(8px); height: 107px;
+                    transform: rotate(0deg); top: auto; width: 107px;
+                  }
+
+
+            }
+
+
+            &::after {
+                content: ""; height: 730px; position: absolute; right: -179px;
+                top: 14px; width: 730px;
+                background-image: url(/public/img/about-img-1.png);
+                background-repeat: no-repeat; background-size: contain;
+
+                @include Media (tablet) {
+                    right: -102px; height: 357px; top: 54px; width: 357px;
+                }
+
+                @include Media (mobile) {
+                    display: none;
+                }
+            }
+
+            .about-header-wrapper {
+                margin-right: 565px;
+
+                @include Media (tablet) {
+                    margin-right: 270px; margin-bottom: 32px;
+                }
+
+                @include Media (mobile) {
+                    margin-right: 0; margin-bottom: 20px;
+                }
+
+                .box-header-title {
+                    @include lg-header-title;
+                }
+                .box-header-text {
+                    @include lg-header-paragraph;
+                }
+            }
+        }
+
+        &::after {
+            content: ""; filter: blur(2px); height: 125px; position: absolute;
+            top: 20px; width: 125px; z-index: -1;
+            background-image: url(/public/img/shapes1.svg);
+            background-repeat: no-repeat; left: -114px;
+
+            @include Media (tablet) {
+                left: -82;
+            }
+
+            @include Media (mobile) {
+                display: none;
+            }
+        }
+    }
+}
+
+.about-business {
+    padding-top: 6rem;
+
+    @include Media (mobile) {
+        padding-top: 2rem;
+    }
+}
+
+

@@ -1,0 +1,61 @@
+.exhibitions-wrapper {
+    background-color: var(--background);
+
+    .exhibitions-area {
+        padding: 80px 0 48px;
+
+
+        .exhibitions-header-wrapper {
+            @include header-section ;
+
+
+            .exhibitions-header-title {
+                @include md-header-title;
+
+            }
+
+            .exhibitions-header-text {
+                @include md-header-paragraph;
+            }
+
+        }
+
+
+        .cards-container {
+            @include cards-container;
+            .exhibitions-card-container {
+            @include card-container; min-height: 8rem;
+            }
+
+            .card-cardexhibitions {
+                box-sizing: border-box; font-weight: 600;
+
+                .exhibitions-card {
+                    color: var(--links);
+
+                        .card-img-wrapper {
+                            border-top-left-radius: 8px; border-top-right-radius: 8px;
+                            overflow: hidden; max-height: 8rem;
+
+                            .card-img {
+                                width: 100%; height: 100%; object-fit: cover;
+                            }
+                        }
+
+                        .card-info {
+                            padding: 0.5rem 1.5rem ;
+
+                            .card-text {
+                                font-size: 18px;
+                            }
+
+                        }
+
+                }
+            }
+
+        }
+
+
+    }
+}

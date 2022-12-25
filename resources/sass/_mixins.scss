@@ -1,0 +1,286 @@
+@mixin primaryBtn {
+    display: inline-flex; justify-content: center; align-items: center;
+    padding: 0 24px;  background-color: var(--primary-color);
+    border: 1px solid transparent; border-radius: 4px; width:100%;
+    cursor: pointer; transition: all .16s ease; user-select: none;
+    box-shadow: 0 8px 32px 0 rgb(84 85 102 / 14%);
+    &:hover  {
+        background-color: var(--primary-mix1);
+    }
+    &:active {
+        background-color: var(--primary-mix2);
+    }
+}
+
+@mixin btnContentSize1 {
+    display: flex; align-items: center;
+    font-size: 22px; font-weight: 500; color: var(--white);
+    height: 3rem;  line-height: 28px; user-select: none;
+}
+
+@mixin btnContentSize2 {
+    display: flex; align-items: center;
+    font-size: 18px; font-weight: 500; color: var(--white);
+    height: 2.4rem;  line-height: 24px; user-select: none;
+}
+
+@mixin cardPrevArrow {
+    display: flex; transition: opacity 0.2s ease-in 0.1s;
+    width: 80px; height: 100%; justify-content: flex-start;
+    -webkit-box-pack: start; -webkit-box-align:center;
+    align-items: center; cursor: pointer; position: absolute; top: 0%;
+
+    .prev-btn {
+        color: rgb(255, 255, 255); padding: 8px 10px 2px 6px;
+        height: 40px; width: 40px; box-sizing: border-box;
+    }
+
+}
+
+@mixin cardNextArrow {
+    display: flex; transition: opacity 0.2s ease-in 0.1s;
+    width: 80px; height: 100%; justify-content: flex-end;
+    -webkit-box-pack: end; -webkit-box-align: center;
+    align-items: center; cursor: pointer; position: absolute; top: 0%;
+
+    .next-btn {
+
+        color: rgb(255, 255, 255); padding: 8px 6px 2px 10px;
+        height: 40px; width: 40px; box-sizing: border-box;
+    }
+}
+
+@mixin lg-header-title {
+
+    font-size: 32px; font-weight: 600;
+
+        @include Media (tablet){
+            font-size: 28px;
+        }
+
+        @include Media (mobile){
+            font-size: 20px; margin-bottom: 6px;
+           }
+
+}
+
+@mixin md-header-title {
+    font-size: 28px; font-weight: 600;
+
+    @include Media (tablet){
+        font-size: 20px;
+    }
+    @include Media (mobile){
+        font-size: 16px; margin-bottom: 6px;
+    }
+}
+
+@mixin sm-header-title {
+
+    font-size: 20px; font-weight: 600;
+
+    @include Media (tablet){
+        font-size: 16px;
+}
+    @include Media (mobile){
+        font-size: 14px; margin-bottom: 12px;
+}
+
+}
+
+@mixin lg-header-paragraph {
+        margin-bottom: 40px; font-size: 24px;
+
+    @include Media (tablet){
+         margin-bottom: 20px; font-size: 18px; max-width: 100%;
+            }
+    @include Media (mobile){
+         margin-bottom:24px; font-size: 17px;
+            }
+}
+
+@mixin md-header-paragraph {
+        margin-bottom: 32px; font-size: 20px; font-weight: 500;
+
+    @include Media (tablet){
+         font-size: 18px; max-width: 100%;
+            }
+    @include Media (mobile){
+         margin-bottom:16px; font-size: 14px;
+            }
+}
+
+@mixin sm-header-paragraph {
+        margin-bottom: 32px; font-size: 18px; font-weight: 500;
+
+    @include Media (tablet){
+         font-size: 16px; max-width: 100%;
+            }
+    @include Media (mobile){
+          font-size: 14px; margin-bottom:16px;
+            }
+}
+
+@mixin attributes-box {
+    color: rgb(79, 111, 143); font-weight: 700;
+    font-size: 12px; line-height: 16px; display: inline-flex;
+    -webkit-font-smoothing: antialiased; margin-bottom: 8px;
+    -webkit-box-align: center; align-items: center;
+}
+
+@mixin stamp-badge {
+
+display: inline-flex;
+-webkit-box-align: center;
+align-items: center;
+vertical-align: top;
+text-transform: uppercase;
+letter-spacing: 0.025em;
+border-width: 1px;
+border-style: solid;
+font-size: 10px;
+font-weight: 700;
+line-height: 1.25;
+min-height: 20px;
+color: rgb(0, 68, 153);
+border-color: rgb(192, 202, 213);
+background-color: rgb(244, 246, 248);
+margin-top: 4px;
+margin-bottom: 0px;
+margin-right: 4px;
+padding: 0px 4px;
+border-radius: 8px;
+
+}
+
+@mixin header-section {
+    margin-bottom: 8px; max-width: 640px; position: relative; z-index: 1;
+}
+
+@mixin cards-container {
+    display: flex; margin-left: -32; justify-content: flex-start;
+    transform: translateZ(0); padding: 32px;
+
+    @include Media (disktop) {
+        margin-left: 0; justify-content: space-between; padding: 32px 0;
+    }
+}
+
+@mixin  card-container {
+    box-shadow: 0 8px 32px 0 rgb(84 85 102 / 14%);
+    margin-right: 20px; background-color: var(--background);
+    border-radius: 8px; flex-shrink: 1;
+    min-height: 15rem; min-width: 16.25rem;
+
+    @include Media (disktop) {
+    flex-shrink: 1; width: 100%;
+    }
+
+}
+
+@mixin formControl {
+    margin: 10px;
+    flex-grow: 1;
+}
+
+@mixin Scroll ( $color: var(--scroll-color), $width: .6rem, $border: 0, $background: var(--scroll-back), $hover: var(--divs), $hovered: 1 ) {
+
+    &::-webkit-scrollbar {
+        width: $width;
+    }
+    &::-webkit-scrollbar-track {
+        background: $background;
+    }
+    @if ( $hovered == 1 ) {
+
+        &::-webkit-scrollbar-thumb { background: $hover; border-radius: $border; }
+
+        &::-webkit-scrollbar-track{ background: none; }
+
+        &:hover{ &::-webkit-scrollbar-thumb{ background-color: $color; } &::-webkit-scrollbar-track{ background-color: $background; } }
+
+    }
+    @else {
+
+        &::-webkit-scrollbar-thumb { background: $color; border-radius: $border; }
+
+    }
+
+}
+
+@mixin Row_Number ( $row_number, $line_height ) {
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: $row_number;
+    line-height: $line_height;
+    max-height: $row_number * $line_height;
+
+}
+
+@mixin Flex ( $query ) {
+
+    @if ( $query == "flex" ) { display: flex; justify-content: center; align-items: center; }
+
+    @else if ( $query == "wrap" ) { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; }
+
+    @else if ( $query == "start" ) { display: flex; justify-content: flex-start; align-items: center; }
+
+    @else if ( $query == "end" ) { display: flex; justify-content: flex-end; align-items: center; }
+
+    @else if ( $query == "space" ) { display: flex; justify-content: space-between; align-items: center; }
+
+    @else if ( $query == "around" ) { display: flex; justify-content: space-around; align-items: center; }
+
+    @else if ( $query == "column" ) { display: flex; justify-content: flex-start; align-items: center; flex-direction: column; }
+
+    @else if ( $query == "row" ) { display: flex; justify-content: flex-start; align-items: center; flex-direction: row }
+
+    @else if ( $query == "align-start" ) { align-items: flex-start; }
+
+    @else if ( $query == "align-end" ) { align-items: flex-end; }
+
+}
+@mixin Loader ( $background, $width, $border:7px ) {
+
+    --bd: #{$border};
+    --n: 10;
+    --g: 1deg;
+    width:$width;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    padding: 1px;
+    background: conic-gradient(#0000, $background) content-box;
+    -webkit-mask:
+        repeating-conic-gradient(#0000 0deg,
+            #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+            #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+        radial-gradient(farthest-side,#0000 calc(98% - var(--bd)),#000 calc(100% - var(--bd)));
+            mask:
+        repeating-conic-gradient(#0000 0deg,
+            #000 1deg calc(360deg/var(--n) - var(--g) - 1deg),
+            #0000     calc(360deg/var(--n) - var(--g)) calc(360deg/var(--n))),
+        radial-gradient(farthest-side,#0000 calc(98% - var(--bd)),#000 calc(100% - var(--bd)));
+    -webkit-mask-composite: destination-in;
+            mask-composite: intersect;
+    animation: load 1s infinite steps(var(--n));
+
+    @keyframes load { to{ transform: rotate(1turn) } }
+
+}
+
+@mixin Media ($point){
+
+    @if $point == disktop {
+        @media (min-width: 1075px) { @content; }
+    }
+    @if $point == tablet {
+        @media  (min-width:681px) and (max-width: 1074px) { @content; }
+    }
+    @if $point == mobile {
+        @media (max-width: 680px) { @content; }
+    }
+
+}

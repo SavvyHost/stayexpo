@@ -1,0 +1,58 @@
+.about-section {
+    display: flex; flex-direction: column; justify-content: center;
+    position: relative; padding: 100px 0 80px; margin-bottom: 6rem;
+
+    @include Media (tablet) {
+        padding: 48px 0; margin-bottom: 0;
+    }
+    @include Media (mobile) {
+        padding: 100px 0  30px; margin-bottom: 0;
+    }
+
+    &::after {
+        content: ""; height: 520px; width: 520px; position: absolute; top: -40px;
+          background-image: url(/public/img/about-img-1.png);
+          right: 0; background-repeat: no-repeat; background-size: contain ;
+
+          @include Media (tablet) {
+            right: -70px; height:  289px; width: 289px;
+          }
+          @include Media (mobile) {
+            width: 209px; height: 209px;  padding: 40px 0; right: -70px;
+          }
+    }
+
+    &::before {
+        content: ""; height: 142px; position: absolute; top: 280px;
+        right: 430px; transform: rotate(30deg); width: 139px; z-index: 1;
+        background-repeat: no-repeat; background-size: contain;
+        background-image: url(/public/img/shapes1.svg);
+
+        @include Media (tablet) {
+            right: 184px; transform: rotate(0deg);
+            height: 67px; top:25px; width: 67px;
+        }
+        @include Media (mobile) {
+            right: 109px; transform: rotate(33deg);
+            height: 67px; top:25px; width: 67px;
+        }
+    }
+
+    .about-section-wrapper {
+        margin-right: 520px; margin-bottom: 50px;
+
+        @include Media (tablet) {
+            margin-right: 250px; margin-bottom: 32px; margin-top: 80px;
+        }
+        @include Media (mobile) {
+            margin-right: 16px; margin-bottom: 20px; margin-top: 44px;
+        }
+
+        .about-header{
+            @include lg-header-title ;
+        }
+        .about-paragraph {
+            @include lg-header-paragraph;
+        }
+    }
+}
